@@ -18,9 +18,8 @@ if str(ASPP_DIR) not in sys.path:
 if str(CKM_BEIJING_DIR) not in sys.path:
     sys.path.insert(0, str(CKM_BEIJING_DIR))
 
-from fm_aspp import FlowMatchingModel  # noqa: E402
-from train_aspp_beijing import main as train_main  # noqa: E402
-
+from fm_aspp import FlowMatchingModel 
+from train_aspp_beijing import main as train_main 
 
 if __name__ == "__main__":
     train_main(FlowMatchingModel)
